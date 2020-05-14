@@ -18,12 +18,16 @@ public class TesteFuncionario {
         
         //Construção do objeto.
         meuFuncionario.numMatricula = 0 ;
+        
         meuFuncionario.nome = "Rene Strickler" ;
+        
         meuFuncionario.nivel = 'J' ;
+        
         meuFuncionario.salario = 3000.00 ;
+        
         meuFuncionario.afastado = false ;
         
-        //Exibindo o INSS.
+        //Calculando o INSS.
         System.out.println("\n\t\t\t --- INSS ---\n");
         meuFuncionario.calcularInss();
         
