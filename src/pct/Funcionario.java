@@ -7,7 +7,7 @@ package pct;
 
 /**
  *
- * @author Carlos
+ * @author Elias
  */
 public class Funcionario {
     //Atributos
