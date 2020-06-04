@@ -17,24 +17,33 @@ public class TesteFuncionario {
         Funcionario meuFuncionario = new Funcionario();
         
         //Construção do objeto.
-        meuFuncionario.numMatricula = 0 ;
+        meuFuncionario.setNumMatricula(0) ;
         
-        meuFuncionario.nome = "Rene Strickler" ;
+        meuFuncionario.setNome("Rene Strickler") ;
         
-        meuFuncionario.nivel = 'J' ;
+        meuFuncionario.setNivel('J') ;
         
-        meuFuncionario.salario = 3000.00 ;
+        meuFuncionario.setSalario(3000.00) ;
         
-        meuFuncionario.afastado = false ;
+        meuFuncionario.setAfastado(false) ;
+        
+        //Apresentando meu Funcionário.
+        System.out.println("\n\t\t\t --- Funcionário.\n");
+        meuFuncionario.apresentarFuncionario();
         
         //Calculando o INSS.
-        System.out.println("\n\t\t\t --- INSS ---\n");
         meuFuncionario.calcularInss();
         
         //Apresentando meu Funcionário.
         System.out.println("\n\t\t\t --- Funcionário.\n");
         meuFuncionario.apresentarFuncionario();
-   
+        
+        //Criação em instancia do objeto da classe outro Funcionário.
+        Funcionario outroFuncionario = new Funcionario(69, "Hyuga", 'S', 9990.90, true);
+        
+        //Apresentando meu outro Funcionário.
+        System.out.println("\n\t\t\t --- Outro Funcionário ---\n");
+        outroFuncionario.apresentarFuncionario();
     }
     
 }
